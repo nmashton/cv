@@ -133,7 +133,7 @@ main > section:first-child {
  * Small screens
  */
 
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   ul {
     padding-left: 0;
   }
