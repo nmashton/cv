@@ -2,6 +2,10 @@
  * Typography and colors
  */
 
+body {
+  line-height: 1.5;
+}
+
 a {
   color: #ed1b24;
   text-decoration: none;
@@ -17,6 +21,16 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+li:before {
+  content: "▸";
+  padding-right: 0.5em;
 }
 
 /***
