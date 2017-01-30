@@ -100,6 +100,10 @@ main > section {
   margin-top: 2em;
 }
 
+main > section:first-child {
+  margin-top: 0;
+}
+
 /***
  * Print layout
  */
