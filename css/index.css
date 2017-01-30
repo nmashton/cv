@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: #ed1b24;
+  color: #888;
   text-decoration: none;
 }
 
 a:hover {
-  color: #aa151c;
+  color: #666;
 }
 
 body {
@@ -44,34 +44,61 @@ header, details, main {
   padding: 0 1em;
 }
 
+header {
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+}
+
+header > * {
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+header > h1 {
+  margin: 0;
+}
+
+header > .social,
+header > h2 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+header > h2 {
+  margin-top: 2em;
+}
+
+.contact {
+  text-align: right;
+}
+
 details summary {
   display: block;
   font-size: 125%;
   font-style: italic;
 }
 
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contact > * {
-  box-sizing: border-box;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-}
-
-.contact > *:first-child {
-  padding-right: 1em;
+@media print {
+  body {
+    font-size: 85%;
+    line-height: 1.15;
+  }
 }
