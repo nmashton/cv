@@ -54,7 +54,7 @@ header, details, main {
 
 header {
   padding-top: 2em;
-  
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,5 +136,13 @@ main > section:first-child {
 @media (max-width: 414px) {
   ul {
     padding-left: 0;
+  }
+
+  header > h2 {
+    margin-top: 1em;
+  }
+
+  .contact {
+    margin-top: 1em;
   }
 }
