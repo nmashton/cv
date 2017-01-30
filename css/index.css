@@ -6,6 +6,10 @@ body {
   line-height: 1.5;
 }
 
+li, p, .contact {
+  color: #333;
+}
+
 a {
   color: #888;
   text-decoration: none;
@@ -22,6 +26,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: normal;
+}
+
+h3 {
+  font-variant: small-caps;
 }
 
 ul {
@@ -88,6 +96,10 @@ header > h2 {
 
 .contact {
   text-align: right;
+}
+
+.in-person {
+  margin-top: 0.5em;
 }
 
 details summary {
