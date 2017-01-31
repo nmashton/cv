@@ -67,6 +67,7 @@ body {
 }
 
 header {
+  padding-top: 1em;
   text-align: center;
 
   -webkit-box-flex: 0;
@@ -174,6 +175,12 @@ main > section:first-child {
 /***
  * Small screens
  */
+
+@media screen and (max-width: 960px) {
+  header {
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 414px) {
   ul {
