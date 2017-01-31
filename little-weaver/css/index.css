@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /***
  * Typography and colors
  */
@@ -46,15 +50,11 @@ li:before {
  */
 
 header, details, main {
-  box-sizing: border-box;
-  margin: 0 auto;
   max-width: 768px;
   padding: 0 1em;
 }
 
-header {
-  padding-top: 2em;
-
+body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,51 +64,28 @@ header {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  -ms-grid-row-align: flex-end;
-  align-items: flex-end;
 }
 
-header > * {
-  box-sizing: border-box;
+header {
+  text-align: center;
+
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -ms-flex: 0 0 280px;
+  flex: 0 0 280px;
 }
 
-header > h1 {
-  margin: 0;
-  padding-right: 3em;
+main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 400px;
+  flex: 1 1 400px;
 }
 
-header > .social,
-header > h2 {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+header > img {
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
 }
 
-header > h2 {
-  margin-top: 2em;
-}
-
-.contact {
-  text-align: right;
-}
-
-.in-person {
-  margin-top: 0.5em;
-}
-
-details summary {
-  display: block;
-  font-size: 125%;
-  font-style: italic;
-}
 
 main > section {
   margin-top: 2em;
@@ -126,6 +103,70 @@ main > section:first-child {
   body {
     font-size: 80%;
     line-height: 1.15;
+  }
+
+  header, details, main {
+    margin: 0 auto;
+  }
+
+  header > img {
+    display: none;
+  }
+
+  header, main {
+    flex-basis: 100%;
+  }
+
+  header {
+    padding-top: 2em;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -ms-grid-row-align: flex-end;
+    align-items: flex-end;
+  }
+
+  header > * {
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  header > h1 {
+    margin: 0;
+    padding-right: 3em;
+  }
+
+  header > .social,
+  header > h2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+
+  header > h2 {
+    margin-top: 2em;
+  }
+
+  .contact {
+    text-align: right;
+  }
+
+  .in-person {
+    margin-top: 0.5em;
   }
 }
 
